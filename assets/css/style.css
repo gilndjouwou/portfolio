@@ -334,6 +334,35 @@ html.lenis {
 }
 
 /* #endregion Reset */
+
+/* Signature images row */
+.signature-row{
+  display:flex;
+  gap:20%;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.signature-row .signature-img{
+  width:40%;
+  height:auto;
+  display:block;
+}
+@media (max-width: 768px){
+  .signature-row{flex-direction:column; gap:20px;}
+  .signature-row .signature-img{width:100%;}
+}
+
+/* Centered reveal image with 20% top margin */
+.centered-img{
+  margin-top:70%;
+  text-align:center;
+}
+.centered-img img{
+  display:inline-block;
+  max-width:80%;
+  height:auto;
+}
 /*----------------------------------------------
 4. General
 ----------------------------------------------*/
