@@ -363,6 +363,21 @@ html.lenis {
   max-width:80%;
   height:auto;
 }
+
+/* Two-up image row */
+.two-up{
+  display:flex;
+  gap:5%;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.two-up .reveal-img{flex:0 0 40%;}
+.two-up .reveal-img img{width:100%; height:auto; display:block;}
+@media (max-width:768px){
+  .two-up{flex-direction:column; gap:20px;}
+  .two-up .reveal-img{flex:0 0 100%;}
+}
 /*----------------------------------------------
 4. General
 ----------------------------------------------*/
